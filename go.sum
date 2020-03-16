@@ -1,0 +1,5 @@
+github.com/ee4g/macro v0.0.0-20200308150255-75d09f1e85c8/go.mod h1:kyjhpvcWnBpeZLEEuwNO3qrHd2YBeUBxdbBf9y6+Ppc=
+github.com/ee4g/openapi v0.0.0-20200305124212-2f8842ae996a h1:LQcisd8Z7j7dtseAOZFNIq/9PtPAtDD+bKeLEEv/fWw=
+github.com/ee4g/openapi v0.0.0-20200305124212-2f8842ae996a/go.mod h1:r3VUyKP8jmw8g93PG7WyhCKrXWcyAXGrvaNSZ9clCpE=
+github.com/ee4g/openapi v0.0.0-20200305142548-286e738805b2 h1:MHzpCOnxvDHzFwaec0J4vMF1ZidD/8Ln5Du4lSn/IqE=
+github.com/ee4g/openapi v0.0.0-20200305142548-286e738805b2/go.mod h1:r3VUyKP8jmw8g93PG7WyhCKrXWcyAXGrvaNSZ9clCpE=
