@@ -1,19 +1,25 @@
 package gluon
 
+type Visibility int
+
+const Public Visibility = 0
+const PackagePrivate Visibility = 1
+
 type Field struct {
-	private bool // means package private
-	name    string
+	v    Visibility
+	name string
+	dec  TypeDec
 }
 
-func NewField(private bool, name string) *Field {
-	return &Field{private: private, name: name}
+func NewField(visibility Visibility, name string, dec TypeDec) *Field {
+	return &Field{v: visibility, name: name, dec: dec}
 }
 
 func (f *Field) toClassDiagram(w *Writer) {
-	if f.private {
-		w.Printf("~")
-	} else {
+	if f.v == Public {
 		w.Printf("+")
+	} else {
+		w.Printf("~")
 	}
-	w.Printf("%s\n", f.name)
+	w.Printf("%s : %s\n", f.name, f.dec.String())
 }

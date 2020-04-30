@@ -32,6 +32,10 @@ func (d *UmlDiagram) WriteFile(f string) (e error) {
 	return nil
 }
 
+func (d *UmlDiagram) String() string {
+	return d.src
+}
+
 func ClassDiagram(p *Package, format string) (*UmlDiagram, error) {
 	w := NewWriter()
 	w.Printf("@startuml\n")
